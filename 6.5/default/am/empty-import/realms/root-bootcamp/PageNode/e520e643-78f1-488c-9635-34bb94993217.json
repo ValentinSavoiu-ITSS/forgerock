@@ -1,0 +1,26 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "PageNode",
+    "entityId" : "e520e643-78f1-488c-9635-34bb94993217",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "e520e643-78f1-488c-9635-34bb94993217",
+    "nodes" : [ {
+      "_id" : "b41dbb75-a794-4b4e-b814-022370ed3022",
+      "nodeType" : "UsernameCollectorNode",
+      "displayName" : "Username Collector"
+    }, {
+      "_id" : "f98ba422-5181-4485-ab84-6728ab0daaed",
+      "nodeType" : "PasswordCollectorNode",
+      "displayName" : "Password Collector"
+    } ],
+    "_type" : {
+      "_id" : "PageNode",
+      "name" : "Page Node",
+      "collection" : true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "ArchetypeNode",
+    "entityId" : "e1cdf09e-7706-4c2a-8e97-bd092b34c8c3",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "e1cdf09e-7706-4c2a-8e97-bd092b34c8c3",
+    "usernameHeader" : "user",
+    "passwordHeader" : "pass",
+    "groupName" : "valigroup",
+    "_type" : {
+      "_id" : "ArchetypeNode",
+      "name" : "ArchetypeNode",
+      "collection" : true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "CheckPhoneNumber",
+    "entityId" : "c9c9202a-e6b8-45b5-8c0d-a03d6851a506",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "c9c9202a-e6b8-45b5-8c0d-a03d6851a506",
+    "outcomes" : [ "found", "not_found" ],
+    "_type" : {
+      "_id" : "CheckPhoneNumber",
+      "name" : "Check Phone Number",
+      "collection" : true
+    }
+  }
+}

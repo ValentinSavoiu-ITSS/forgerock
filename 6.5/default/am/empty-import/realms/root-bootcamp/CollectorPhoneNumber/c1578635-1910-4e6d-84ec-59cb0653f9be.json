@@ -1,0 +1,17 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2.3",
+    "entityType" : "CollectorPhoneNumber",
+    "entityId" : "c1578635-1910-4e6d-84ec-59cb0653f9be",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "c1578635-1910-4e6d-84ec-59cb0653f9be",
+    "_type" : {
+      "_id" : "CollectorPhoneNumber",
+      "name" : "Collector Phone Number",
+      "collection" : true
+    }
+  }
+}
