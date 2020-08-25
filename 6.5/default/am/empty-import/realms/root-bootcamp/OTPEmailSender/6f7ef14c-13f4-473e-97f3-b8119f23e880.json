@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/bootcamp",
-    "amsterVersion" : "6.5.2.3",
+    "amsterVersion" : "6.5.2",
     "entityType" : "OTPEmailSender",
     "entityId" : "6f7ef14c-13f4-473e-97f3-b8119f23e880",
     "pathParams" : { }

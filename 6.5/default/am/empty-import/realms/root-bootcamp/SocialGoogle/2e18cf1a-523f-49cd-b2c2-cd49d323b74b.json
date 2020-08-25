@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/bootcamp",
-    "amsterVersion" : "6.5.2.3",
+    "amsterVersion" : "6.5.2",
     "entityType" : "SocialGoogle",
     "entityId" : "2e18cf1a-523f-49cd-b2c2-cd49d323b74b",
     "pathParams" : { }
