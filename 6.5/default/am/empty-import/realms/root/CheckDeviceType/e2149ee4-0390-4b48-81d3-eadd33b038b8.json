@@ -1,0 +1,20 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "CheckDeviceType",
+    "entityId" : "e2149ee4-0390-4b48-81d3-eadd33b038b8",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "e2149ee4-0390-4b48-81d3-eadd33b038b8",
+    "deviceType" : [ "ios", "android", "mincu" ],
+    "outcomes" : [ "true", "false" ],
+    "headerDeviceName" : "deviceType",
+    "_type" : {
+      "_id" : "CheckDeviceType",
+      "name" : "Check Device",
+      "collection" : true
+    }
+  }
+}

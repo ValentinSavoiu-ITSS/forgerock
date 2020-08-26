@@ -1,0 +1,84 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "AuthTree",
+    "entityId" : "ex",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "ex",
+    "nodes" : {
+      "8d1e2344-0801-40d5-a874-1cca0759b0b9" : {
+        "displayName" : "Page Node",
+        "nodeType" : "PageNode",
+        "connections" : {
+          "outcome" : "117e1b72-b1af-4ff1-8abb-f1f0688ec877"
+        }
+      },
+      "117e1b72-b1af-4ff1-8abb-f1f0688ec877" : {
+        "displayName" : "Find Identity",
+        "nodeType" : "FindIdentity",
+        "connections" : {
+          "false" : "e301438c-0bd0-429c-ab0c-66126501069a",
+          "not_found" : "e301438c-0bd0-429c-ab0c-66126501069a",
+          "true" : "91fa9989-59fe-498c-8f66-46f2a6d429bf"
+        }
+      },
+      "91fa9989-59fe-498c-8f66-46f2a6d429bf" : {
+        "displayName" : "HOTP Generator",
+        "nodeType" : "OneTimePasswordGeneratorNode",
+        "connections" : {
+          "outcome" : "644dc497-4677-4995-9c14-1cd54e9c53fb"
+        }
+      },
+      "644dc497-4677-4995-9c14-1cd54e9c53fb" : {
+        "displayName" : "OTP Email Sender",
+        "nodeType" : "OneTimePasswordSmtpSenderNode",
+        "connections" : {
+          "outcome" : "960e9064-4dcc-43a3-8be3-9af4750f9227"
+        }
+      },
+      "960e9064-4dcc-43a3-8be3-9af4750f9227" : {
+        "displayName" : "OTP Collector Decision",
+        "nodeType" : "OneTimePasswordCollectorDecisionNode",
+        "connections" : {
+          "false" : "f605477f-c109-4668-bbc0-64f9021c882f",
+          "true" : "19eea179-5e19-4be4-a9e8-a5912969ae07"
+        }
+      },
+      "f605477f-c109-4668-bbc0-64f9021c882f" : {
+        "displayName" : "Retry Limit Decision",
+        "nodeType" : "RetryLimitDecisionNode",
+        "connections" : {
+          "Retry" : "91fa9989-59fe-498c-8f66-46f2a6d429bf",
+          "Reject" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      },
+      "19eea179-5e19-4be4-a9e8-a5912969ae07" : {
+        "displayName" : "Activate User",
+        "nodeType" : "ActivateUser",
+        "connections" : {
+          "true" : "4297800a-510e-48dc-9e3c-bbbe4644a501",
+          "false" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      },
+      "3e9150b4-1bd4-47e7-b01b-e8d9c9dabd5e" : {
+        "displayName" : "Modify Auth Level",
+        "nodeType" : "ModifyAuthLevelNode",
+        "connections" : {
+          "outcome" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+        }
+      },
+      "4297800a-510e-48dc-9e3c-bbbe4644a501" : {
+        "displayName" : "Get employee number ",
+        "nodeType" : "GetEmployeeNumber",
+        "connections" : {
+          "true" : "3e9150b4-1bd4-47e7-b01b-e8d9c9dabd5e",
+          "false" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      }
+    },
+    "entryNodeId" : "8d1e2344-0801-40d5-a874-1cca0759b0b9"
+  }
+}
