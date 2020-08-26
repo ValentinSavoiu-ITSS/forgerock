@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "ActivateUser",
+    "entityId" : "0051c861-cf77-4a57-8de7-d1701c6b0a7b",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "0051c861-cf77-4a57-8de7-d1701c6b0a7b",
+    "outcomes" : [ "good" ],
+    "_type" : {
+      "_id" : "ActivateUser",
+      "name" : "Activate User",
+      "collection" : true
+    }
+  }
+}

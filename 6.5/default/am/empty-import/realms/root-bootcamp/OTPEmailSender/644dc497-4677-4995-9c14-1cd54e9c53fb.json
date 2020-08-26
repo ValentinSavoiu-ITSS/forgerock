@@ -1,0 +1,25 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "OTPEmailSender",
+    "entityId" : "644dc497-4677-4995-9c14-1cd54e9c53fb",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "644dc497-4677-4995-9c14-1cd54e9c53fb",
+    "hostName" : "smtp.gmail.com",
+    "password" : null,
+    "sslOption" : "SSL",
+    "hostPort" : 465,
+    "emailAttribute" : "mail",
+    "smsGatewayImplementationClass" : "com.sun.identity.authentication.modules.hotp.DefaultSMSGatewayImpl",
+    "fromEmailAddress" : "forgerockitss@itsmartsystems.eu",
+    "username" : "bootcampitss@gmail.com",
+    "_type" : {
+      "_id" : "OneTimePasswordSmtpSenderNode",
+      "name" : "OTP Email Sender",
+      "collection" : true
+    }
+  }
+}

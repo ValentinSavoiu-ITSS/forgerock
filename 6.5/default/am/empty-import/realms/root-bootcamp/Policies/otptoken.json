@@ -1,0 +1,68 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "Policies",
+    "entityId" : "otptoken",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "otptoken",
+    "name" : "otptoken",
+    "active" : true,
+    "description" : "",
+    "resources" : [ "https://homebank.ro:443/payment" ],
+    "applicationName" : "Bootcamp",
+    "actionValues" : {
+      "POST" : false,
+      "GET" : false
+    },
+    "subject" : {
+      "type" : "AuthenticatedUsers"
+    },
+    "condition" : {
+      "type" : "AND",
+      "conditions" : [ {
+        "type" : "AuthLevel",
+        "authLevel" : 2
+      }, {
+        "type" : "SimpleTime",
+        "startTime" : "09:00",
+        "endTime" : "21:00",
+        "startDay" : "",
+        "endDay" : "",
+        "enforcementTimeZone" : "GMT"
+      } ]
+    },
+    "resourceTypeUuid" : "76656a38-5f8e-401b-83aa-4ccb74ce88d2",
+    "resourceAttributes" : [ {
+      "type" : "User",
+      "propertyName" : "webauthnDeviceProfiles",
+      "propertyValues" : [ ]
+    }, {
+      "type" : "User",
+      "propertyName" : "uid",
+      "propertyValues" : [ ]
+    }, {
+      "type" : "User",
+      "propertyName" : "mail",
+      "propertyValues" : [ ]
+    }, {
+      "type" : "Static",
+      "propertyName" : "badTime",
+      "propertyValues" : [ "true" ]
+    }, {
+      "type" : "User",
+      "propertyName" : "dn",
+      "propertyValues" : [ ]
+    }, {
+      "type" : "User",
+      "propertyName" : "createTimestamp",
+      "propertyValues" : [ ]
+    } ],
+    "lastModifiedBy" : "id=amadmin,ou=user,dc=openam,dc=forgerock,dc=org",
+    "lastModifiedDate" : "2020-08-06T06:12:12.596Z",
+    "createdBy" : "id=amadmin,ou=user,dc=openam,dc=forgerock,dc=org",
+    "creationDate" : "2020-08-05T11:24:12.689Z"
+  }
+}

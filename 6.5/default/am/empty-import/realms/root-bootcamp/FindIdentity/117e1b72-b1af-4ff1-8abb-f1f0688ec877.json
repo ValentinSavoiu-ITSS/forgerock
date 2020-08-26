@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "FindIdentity",
+    "entityId" : "117e1b72-b1af-4ff1-8abb-f1f0688ec877",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "117e1b72-b1af-4ff1-8abb-f1f0688ec877",
+    "outcomes" : [ "true", "false", "not_found" ],
+    "_type" : {
+      "_id" : "FindIdentity",
+      "name" : "Find Identity",
+      "collection" : true
+    }
+  }
+}

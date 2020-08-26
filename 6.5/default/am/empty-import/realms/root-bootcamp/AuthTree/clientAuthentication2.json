@@ -1,0 +1,22 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "AuthTree",
+    "entityId" : "clientAuthentication2",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "clientAuthentication2",
+    "nodes" : {
+      "e520e643-78f1-488c-9635-34bb94993217" : {
+        "displayName" : "Page Node",
+        "nodeType" : "PageNode",
+        "connections" : {
+          "outcome" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+        }
+      }
+    },
+    "entryNodeId" : "e520e643-78f1-488c-9635-34bb94993217"
+  }
+}

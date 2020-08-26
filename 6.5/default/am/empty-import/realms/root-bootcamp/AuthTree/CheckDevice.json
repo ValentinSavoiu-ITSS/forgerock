@@ -1,0 +1,14 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "AuthTree",
+    "entityId" : "CheckDevice",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "CheckDevice",
+    "nodes" : { },
+    "entryNodeId" : "e301438c-0bd0-429c-ab0c-66126501069a"
+  }
+}

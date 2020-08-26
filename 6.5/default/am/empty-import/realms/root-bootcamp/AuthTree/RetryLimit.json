@@ -1,0 +1,52 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "AuthTree",
+    "entityId" : "RetryLimit",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "RetryLimit",
+    "nodes" : {
+      "d8a5853e-2a11-4f80-9579-079ce671d0e1" : {
+        "displayName" : "User Name Collector",
+        "nodeType" : "UsernameCollectorNode",
+        "connections" : {
+          "outcome" : "1709937a-5d0f-445d-b26b-4e18660e706d"
+        }
+      },
+      "1709937a-5d0f-445d-b26b-4e18660e706d" : {
+        "displayName" : "Password Collector",
+        "nodeType" : "PasswordCollectorNode",
+        "connections" : {
+          "outcome" : "319dbce2-8635-449d-8a03-36d08fad7338"
+        }
+      },
+      "319dbce2-8635-449d-8a03-36d08fad7338" : {
+        "displayName" : "Data Store Decision",
+        "nodeType" : "DataStoreDecisionNode",
+        "connections" : {
+          "true" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+          "false" : "e25fbb91-43a8-488c-9b7e-bf24ccb9afde"
+        }
+      },
+      "e25fbb91-43a8-488c-9b7e-bf24ccb9afde" : {
+        "displayName" : "Retry Limit Decision",
+        "nodeType" : "RetryLimitDecisionNode",
+        "connections" : {
+          "Reject" : "e1d3886f-6a8e-48ed-9aee-633e0f35da73",
+          "Retry" : "d8a5853e-2a11-4f80-9579-079ce671d0e1"
+        }
+      },
+      "e1d3886f-6a8e-48ed-9aee-633e0f35da73" : {
+        "displayName" : "Account Lockout",
+        "nodeType" : "AccountLockoutNode",
+        "connections" : {
+          "outcome" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      }
+    },
+    "entryNodeId" : "d8a5853e-2a11-4f80-9579-079ce671d0e1"
+  }
+}

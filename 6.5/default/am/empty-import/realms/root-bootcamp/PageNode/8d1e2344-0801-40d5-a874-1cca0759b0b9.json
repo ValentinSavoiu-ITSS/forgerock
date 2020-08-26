@@ -1,0 +1,26 @@
+{
+  "metadata" : {
+    "realm" : "/bootcamp",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "PageNode",
+    "entityId" : "8d1e2344-0801-40d5-a874-1cca0759b0b9",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "8d1e2344-0801-40d5-a874-1cca0759b0b9",
+    "nodes" : [ {
+      "_id" : "db7b8e6f-d2b0-445a-a743-c420d576db29",
+      "nodeType" : "CollectorEmail",
+      "displayName" : "Collector Email"
+    }, {
+      "_id" : "6be0f4e1-735e-4d90-adef-ffa7266a7b14",
+      "nodeType" : "CollectorPhoneNumber",
+      "displayName" : "Collector Phone Number"
+    } ],
+    "_type" : {
+      "_id" : "PageNode",
+      "name" : "Page Node",
+      "collection" : true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "metadata" : {
+    "realm" : "/",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "AuthTree",
+    "entityId" : "sda",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "sda",
+    "nodes" : {
+      "0051c861-cf77-4a57-8de7-d1701c6b0a7b" : {
+        "displayName" : "Activate User",
+        "nodeType" : "ActivateUser",
+        "connections" : {
+          "good" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      }
+    },
+    "entryNodeId" : "0051c861-cf77-4a57-8de7-d1701c6b0a7b"
+  }
+}
